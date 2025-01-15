@@ -37,8 +37,8 @@ if __name__ == '__main__':
     parser.add_argument('--model_weights', '-w', type=str, required=True, help="Path to the model weights file.")
     parser.add_argument('--input_image', '-i', type=str, required=True, help="Path to the input image.")
     parser.add_argument('--output_image', '-o', type=str, required=True, help="Path to save the output image.")
-    parser.add_argument('--use_cmap', '-c', type=bool, help="Use a colormap for the output image.")
-    parser.add_argument('--no_limit_shape', '-l', type=bool, help="Remove max image size limit of 1024px.")
+    parser.add_argument('--use_cmap', '-c', type=bool, help="Use a colormap for the output image (True/False).")
+    parser.add_argument('--no_limit_shape', '-l', type=bool, help="Remove max image size limit of 1024px (True/False    ).")
 
     args = parser.parse_args()
 
